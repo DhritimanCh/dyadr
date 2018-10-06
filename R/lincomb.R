@@ -16,7 +16,7 @@
 lincomb <- function(outp,v1,v2,fun="D"){
   outp = summary(outp)
   
-  vval = matrix()
+  vval = c(1,1,1)
   
   if(class(outp)[2]=="gls"){
     c1=as.numeric(outp$coefficients[v1])
