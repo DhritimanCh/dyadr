@@ -46,5 +46,9 @@ lincomb <- function(outp,v1,v2,fun="D"){
   vval[2]=sqrt(vval[2]) 
   vval[3] = 2-2*pnorm(abs(vval[1]/vval[2]))
   
+  names(vval)[1] = "Coefficient"
+  names(vval)[2] = "Standard.Error"
+  names(vval)[3] = "P-value"
+  
   return(vval)
 }
